@@ -1,0 +1,36 @@
+
+###
+POST http://localhost:9000/api/operarios HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "cedula": 41545200,
+    "nombreCompleto":"John Mejia",
+    "telefono":3821450,
+    "direccion":"Barrio la samaria",
+    "email":"johnmejia@gmail.com"
+    
+}  
+
+###
+GET http://localhost:9000/api/operarios HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/operarios/663300856d4ef0ab3dba65eb HTTP/1.1
+
+###
+PUT http://localhost:9000/api/operarios/663300856d4ef0ab3dba65eb HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "cedula": 41545200,
+    "nombreCompleto":"Jhon Mejia",
+    "telefono":3821450,
+    "direccion":"Barrio la samaria",
+    "email":"johnmejia@gmail.com"
+    
+}  
+
+###
+DELETE http://localhost:9000/api/operarios/6632ff961aa4e0afc9b6975c HTTP/1.1
