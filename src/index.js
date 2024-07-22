@@ -17,7 +17,7 @@ app.use("/api",maquinasRoutes);
 
 //routes
 app.get('/',(req,res)=>{
-    res.send("Welcome to my API");
+    res.send("Welcome to my APIiiiiiii");
 });
 
 //mongodb connection
