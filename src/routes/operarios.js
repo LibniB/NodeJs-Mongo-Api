@@ -31,9 +31,9 @@ router.get('/operarios/:id',(req,res)=>{
 // actualizar un operario
 router.put('/operarios/:id',(req,res)=>{
     const { id }= req.params;
-    const {cedula,nombreCompleto,telefono,direccion,email} = req.body;
+    const {cedula,nombreCompleto,telefono,direccion,email,password} = req.body;
     operariosSchema
-     .updateOne({ _id:id },{$set:{cedula,nombreCompleto,telefono,direccion,email}})
+     .updateOne({ _id:id },{$set:{cedula,nombreCompleto,telefono,direccion,email,password}})
      .then((data)=>res.json(data))
      .catch((error)=>res.json({message:error}))
  })
