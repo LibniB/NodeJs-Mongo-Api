@@ -4,6 +4,7 @@ require("dotenv").config();
 const operariosRoutes = require("./routes/operarios");
 const proveedoresRoutes= require("./routes/proveedores");
 const maquinasRoutes = require("./routes/maquinas");
+const usersRoutes = require("./routes/users");
 
 const app = express();
 const port= process.env.PORT || 9000;
@@ -20,6 +21,7 @@ app.use(express.json())
 app.use('/api',operariosRoutes);
 app.use("/api",proveedoresRoutes);
 app.use("/api",maquinasRoutes);
+app.use("/api",usersRoutes);
 
 
 //routes
