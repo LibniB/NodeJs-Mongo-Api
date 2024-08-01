@@ -1,5 +1,5 @@
 const express = require("express");
-const operariosSchema =require("../models/users");
+const usersSchema =require("../models/users");
 const router= express.Router();
 
 //crear operario
