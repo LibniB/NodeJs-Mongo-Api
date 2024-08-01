@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const operariosSchema = mongoose.Schema({
     cedula:{
         type:String,
-        required:true
+       
     },
     nombreCompleto:{
         type:String,
@@ -11,13 +11,17 @@ const operariosSchema = mongoose.Schema({
     },
     telefono:{
         type:Number,
-        required:true
+        
     },
     direccion:{
         type:String,
-        required:true
+       
     },
     email:{
+        type:String,
+        required:true
+    },
+    password:{
         type:String,
         required:true
     }
