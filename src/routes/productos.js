@@ -31,6 +31,7 @@ router.get('/productos/:id',(req,res)=>{
 
 // actualizar un producto
 router.put('/productos/:id',(req,res)=>{
+    console.log('PUT request received:', req.params, req.body);
     const { id }= req.params;
     const {nombre,precio,descripcion,categoria, imagen} = req.body;
     productoSchema
