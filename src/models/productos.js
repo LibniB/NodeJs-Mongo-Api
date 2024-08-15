@@ -6,7 +6,7 @@ const productoSchema = mongoose.Schema({
         required: true
     },
     precio: {
-        type: Number,
+        type: String,
         required: true
     },
     descripcion: {
@@ -17,8 +17,7 @@ const productoSchema = mongoose.Schema({
         required: true
     },
     imagen:{
-        type: String,
-        required: true
+        type: String
     }
 });
 
